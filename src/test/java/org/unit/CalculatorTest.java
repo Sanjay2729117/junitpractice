@@ -33,7 +33,7 @@ public class CalculatorTest {
         assertEquals(0,calculator.multiply(5,0));
         assertEquals(1,calculator.multiply(1,1));
     }
-    void divide_Test(){
+    @Test void divide_Test(){
         assertThrows(ArithmeticException.class,()->calculator.divide(5,0));
         assertEquals(1,calculator.divide(5,5));
     }
